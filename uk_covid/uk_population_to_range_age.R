@@ -10,8 +10,8 @@ uk_population <- vroom("https://raw.githubusercontent.com/sgarciapuga/R/master/u
 
 uk_pop_agregated <- uk_population %>% 
   group_by(nation) %>% 
-  transmute("0-4" = sum(across(c(m_19_0:m_19_4, f_19_0:f_19_4))),
-            "5-9" = sum(across(c(m_19_5:m_19_9, f_19_5:f_19_9))),				
+  transmute("00-04" = sum(across(c(m_19_0:m_19_4, f_19_0:f_19_4))),
+            "05-09" = sum(across(c(m_19_5:m_19_9, f_19_5:f_19_9))),				
             "10-14" = sum(across(c(m_19_10:m_19_14, f_19_10:f_19_14))),
             "15-19" = sum(across(c(m_19_15:m_19_19, f_19_15:f_19_19))),
             "20-24" = sum(across(c(m_19_20:m_19_24, f_19_20:f_19_24))),
