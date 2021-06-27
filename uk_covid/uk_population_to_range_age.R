@@ -32,7 +32,8 @@ uk_pop_agregated <- uk_population %>%
             "90+"=  sum(across(c(m_19_60:m_19_90, f_19_60:f_19_90))),
             # Hospital admissions have the below ranges
             "0-5" = sum(across(c(m_19_0:m_19_5, f_19_0:f_19_5))),
-            "6-17" = sum(across(c(m_19_6:m_19_17, f_19_6:f_19_17))),				
+            "6-17" = sum(across(c(m_19_6:m_19_17, f_19_6:f_19_17))),
+            "18-64" = sum(across(c(m_19_18:m_19_64, f_19_18:f_19_64))),
             "65-84" = sum(across(c(m_19_65:m_19_84, f_19_65:f_19_84))),
             "85+" = sum(across(c(m_19_85:m_19_90, f_19_85:f_19_90)))
             )
